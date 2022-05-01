@@ -1,0 +1,107 @@
+
+
+/*propiedades al columnas de promociones*/
+
+.contenedor{
+    background: whitesmoke;
+    width: none;
+    max-width: 900px;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.tabla {
+    margin: auto;
+    border:1px solid black;
+    border-radius: 4px;
+    padding: 70px;
+    text-align: center;
+    
+    color: black;
+}
+.tabla > h2{
+    display: inline-block;
+    margin-bottom: 35px;
+
+
+}
+
+.tabla img{
+    width: 50px;
+    margin-bottom: 35px;
+}
+
+.tabla > h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.tabla > p{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+ .bottom{
+    display: inline-block;
+    width: 120px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin: auto;
+}
+
+/*animacion  a tabla de promociones*/
+
+.tabla:hover{
+    background: black;
+    color: orange;
+    transition: 1s all;
+    transform:scale(1.1);
+    cursor: pointer;
+    .bottom:hover{
+        background: orange;
+        color: black;
+        transition: 0.7s all;
+        transform:scale(1.1);
+        cursor: pointer;
+
+}
+
+
+
+
+
+}
+ .contenido{
+     
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center; 
+ }
+
+ .error{
+     background: #94a4cb;
+ }
+/*extend*/
+.btn-color{
+    @extend .bottom
+    
+    
+}
+    
+.bottom{
+        background-color: map-get($map: $paleta, $key:'uno' );
+    }
+

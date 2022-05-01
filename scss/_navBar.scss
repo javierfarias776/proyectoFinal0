@@ -1,0 +1,60 @@
+/*propiedades a la navbar*/
+.navg{
+    
+    background: map-get($map: $paleta, $key:'uno' );
+    .navg a{
+      font-family: 'roboto', sans-serif;
+        color: black;
+        font-size: 15px;
+        padding: 10px 15px;
+        text-align: start;
+        text-transform: uppercase;
+        
+    }
+}
+
+.navg:hover{
+    color: map-get($map: $paleta, $key:'dos' );;
+}
+
+/*animacion al menu*/
+
+.link:before{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.5s;
+    .slider_left:before{
+        left:0;
+        .slider_right:before{
+            right:0;
+    }
+  }
+}
+
+.link:hover:before{
+    width: 100%;
+}
+
+
+   
+
+
+@media (min-width: 280) and (max-width:395px){
+    #botonera img[src="./logo/logo-anaranjado.jpg"]{
+        width: 100px;
+    
+}
+}
+
+@media (min-width:280) and (max-width:991){
+    img{
+        width: 100%;
+    }
+}
+
+
+

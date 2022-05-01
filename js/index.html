@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    
+    <script>
+    
+        let genero = prompt("eres hombre o mujer?");
+        if ((genero !="hombre") && (genero !="mujer")){
+            alert ("no sabes que eres?");
+        }
+
+        if (genero == "hombre"){
+            alert("puedes pasar");
+        }
+        if (genero == "mujer"){
+            alert("puedes pasar");
+
+        }
+        if (genero == ""){
+            prompt("ingrese genero");
+        }
+        
+
+            let edad = prompt ("ingresa tu edad");
+            if (edad <"18"){
+                alert("ni de broma pasas");
+            }
+
+            if ((genero == "hombre") && (edad>="18")){
+                alert("dale patron");
+            }
+
+
+            if ((genero =="") && (edad="")){
+                alert("ingresa valor");
+            }
+
+            if ((genero == "mujer") && (edad<18)){
+                alert("vaya para su casa señorita");
+            }
+
+            if ((genero == "mujer") && (edad>=18)){
+                alert("puedes pasar, tragos gratis.");
+            }
+
+
+            if ((genero =="") && (edad="")){
+                alert("ingresa valor");
+            }
+
+    
+
+
+  </script>
+    
+</body>
+</html>

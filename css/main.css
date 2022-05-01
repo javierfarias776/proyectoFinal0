@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:wght@300;400;500&display=swap");
+body {
+  background-color: #000000; }
+
+/*propiedades a la navbar*/
+.navg {
+  background: #ffa500; }
+  .navg .navg a {
+    font-family: 'roboto', sans-serif;
+    color: black;
+    font-size: 15px;
+    padding: 10px 15px;
+    text-align: start;
+    text-transform: uppercase; }
+
+.navg:hover {
+  color: #000000; }
+
+/*animacion al menu*/
+.link:before {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.5s; }
+  .link:before .slider_left:before {
+    left: 0; }
+    .link:before .slider_left:before .slider_right:before {
+      right: 0; }
+
+.link:hover:before {
+  width: 100%; }
+
+@media (min-width: 280) and (max-width: 395px) {
+  #botonera img[src="./logo/logo-anaranjado.jpg"] {
+    width: 100px; } }
+
+@media (min-width: 280) and (max-width: 991) {
+  img {
+    width: 100%; } }
+
+/*propiedades al columnas de promociones*/
+.contenedor {
+  background: whitesmoke;
+  width: none;
+  max-width: 900px;
+  margin: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.tabla {
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 70px;
+  text-align: center;
+  color: black; }
+
+.tabla > h2 {
+  display: inline-block;
+  margin-bottom: 35px; }
+
+.tabla img {
+  width: 50px;
+  margin-bottom: 35px; }
+
+.tabla > h3 {
+  font-size: 30px;
+  margin-bottom: 20px; }
+
+.tabla > p {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.bottom, .btn-color {
+  display: inline-block;
+  width: 120px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  margin: auto; }
+
+/*animacion  a tabla de promociones*/
+.tabla:hover {
+  background: black;
+  color: orange;
+  transition: 1s all;
+  transform: scale(1.1);
+  cursor: pointer; }
+  .tabla:hover .bottom:hover, .tabla:hover .btn-color:hover {
+    background: orange;
+    color: black;
+    transition: 0.7s all;
+    transform: scale(1.1);
+    cursor: pointer; }
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center; }
+
+.error {
+  background: #94a4cb; }
+
+/*extend*/
+.bottom, .btn-color {
+  background-color: #ffa500; }
+
+p {
+  font-size: 1em; }
+
+/*mixin*/
+h1, h2, h3 {
+  font-size: 2em;
+  line-height: 1.6em;
+  color: #808080; }
+
+.text {
+  font-size: 1.1em;
+  line-height: 1em;
+  color: white; }

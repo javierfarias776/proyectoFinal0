@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:wght@300;400;500&display=swap');
+body{
+    background-color: map-get($map: $paleta, $key:'dos' );
+
+}
+
+$fontMain:'Lato', sans-serif;
+$fontSecondary:'Roboto', sans-serif;
+
+$textXL:4em;
+$textLg:3em;
+$textMd:2em;
+$textSm:1em;
